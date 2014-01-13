@@ -14,15 +14,12 @@
 
 @interface Ticket : NSObject
 
-@property (nonatomic, strong) NSDictionary *rawTicket;
-
 @property (readonly, strong) NSString *title;
 
 @property (readonly, strong) NSString *description;
-@property (readonly, strong) NSString *ticketType;
-@property (readonly, strong) NSString *status;
+@property (readonly, strong) NSString *ticketDescription;
 @property (readonly, strong) NSDate *dueDate;
 @property (readonly, strong) NSString *dueDateText;
-@property (assign, nonatomic) int complexity;
+
 
 @end

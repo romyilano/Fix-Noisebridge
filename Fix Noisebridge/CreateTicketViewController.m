@@ -7,7 +7,7 @@
 //
 
 #import "CreateTicketViewController.h"
-
+#import "Ticket.h"
 
 @interface CreateTicketViewController ()
 
