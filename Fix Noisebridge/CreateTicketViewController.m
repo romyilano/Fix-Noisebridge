@@ -8,6 +8,7 @@
 
 #import "CreateTicketViewController.h"
 #import "Ticket.h"
+#import <Parse/Parse.h>
 
 @interface CreateTicketViewController ()
 
@@ -50,5 +51,18 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
+}
+
+#pragma mark - Action
+- (IBAction)submitButtonPressed:(id)sender {
+    
+    PFObject *newTicket = [PFObject objectWithClassName:@"Ticket"];
+    [newTicket setObject:self.titleTextField.text forKey:@"title"];
+    [newTicket setObject:self.repairObjectTextField.text forKey:@"repairObject"];
+    [newTicket setObject:self.authorTextField.text forKey:@"author"];
+    
+    [newTicket saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
+    }];
 }
 @end

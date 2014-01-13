@@ -206,16 +206,25 @@
                                 <state key="normal" title="Submit Ticket">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="ph7-MH-tB2" eventType="touchUpInside" id="hs5-qq-ygP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Create" id="3cf-81-KnI"/>
+                    <navigationItem key="navigationItem" title="Create" id="3cf-81-KnI">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="umf-rG-K7h">
+                            <connections>
+                                <action selector="submitButtonPressed:" destination="ph7-MH-tB2" id="dG1-Em-Oci"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="authorTextField" destination="LLE-6P-vyb" id="LrS-lQ-77N"/>
                         <outlet property="detailsTextView" destination="h79-q5-opE" id="eOZ-Tn-dHO"/>
                         <outlet property="repairObjectTextField" destination="uh1-A2-0fp" id="w1c-Hs-inE"/>
-                        <outlet property="submitButton" destination="aqh-ci-ziv" id="CIG-ut-9cM"/>
+                        <outlet property="submitButton" destination="aqh-ci-ziv" id="o8i-2s-3Sb"/>
                         <outlet property="titleTextField" destination="cm7-9i-Q92" id="tVh-J9-xcs"/>
                     </connections>
                 </viewController>

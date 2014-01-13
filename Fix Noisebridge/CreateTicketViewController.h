@@ -18,4 +18,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
+- (IBAction)submitButtonPressed:(id)sender;
+
 @end

@@ -15,11 +15,16 @@
 @interface Ticket : NSObject
 
 @property (readonly, strong) NSString *title;
-
-@property (readonly, strong) NSString *description;
 @property (readonly, strong) NSString *ticketDescription;
 @property (readonly, strong) NSDate *dueDate;
+
+@property (readonly, strong) NSDate *createdAtDate;     // createdAt
+@property (readonly, strong) NSDate *updatedAtDate;     // Date
+
 @property (readonly, strong) NSString *dueDateText;
+
+// to-do - set up Owner class
+@property (readonly, strong) NSString *owner;
 
 
 @end
