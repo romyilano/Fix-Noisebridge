@@ -368,6 +368,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Romy Ilano";
 				TargetAttributes = {
+					1C6CEB01188393F6003F5BB4 = {
+						DevelopmentTeam = 6K559Y986U;
+					};
 					1C6CEB22188393F6003F5BB4 = {
 						TestTargetID = 1C6CEB01188393F6003F5BB4;
 					};
@@ -560,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -567,6 +571,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fix Noisebridge/Fix Noisebridge-Prefix.pch";
 				INFOPLIST_FILE = "Fix Noisebridge/Fix Noisebridge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -577,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -584,6 +590,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fix Noisebridge/Fix Noisebridge-Prefix.pch";
 				INFOPLIST_FILE = "Fix Noisebridge/Fix Noisebridge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

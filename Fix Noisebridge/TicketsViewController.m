@@ -7,9 +7,11 @@
 //
 
 #import "TicketsViewController.h"
+#import <Parse/Parse.h>
 
 @interface TicketsViewController ()
-
+@property (nonatomic, strong) NSArray *tools;
+@property (nonatomic, strong) NSArray *tickets;
 @end
 
 @implementation TicketsViewController
@@ -29,9 +31,23 @@
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+    PFQuery *query = [PFQuery queryWithClassName:@"Ticket"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (!error)
+        {
+            self.tickets = objects;
+            
+        }
+        else
+        {
+            // log details of failure
+            NSLog(@"Eror: %@ %@", error, [error userInfo]);
+        }
+    }];
+   
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning
