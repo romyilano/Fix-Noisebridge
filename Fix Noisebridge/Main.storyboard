@@ -134,6 +134,9 @@
                                 <state key="normal" title="Find Things to Fix">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="JyU-nN-uM9" kind="push" id="u1o-SL-TEI"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NB-iOS7Logo.png" id="Owq-Z5-yGK">
                                 <rect key="frame" x="64" y="90" width="192" height="112"/>
@@ -226,11 +229,12 @@
                         <outlet property="repairObjectTextField" destination="uh1-A2-0fp" id="w1c-Hs-inE"/>
                         <outlet property="submitButton" destination="aqh-ci-ziv" id="o8i-2s-3Sb"/>
                         <outlet property="titleTextField" destination="cm7-9i-Q92" id="tVh-J9-xcs"/>
+                        <segue destination="JyU-nN-uM9" kind="push" identifier="TicketCreatedSegue" id="xP2-dF-Qnh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwk-6T-5pI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000" y="257"/>
+            <point key="canvasLocation" x="2126" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2T1-pr-yrK">
@@ -285,6 +289,41 @@
                 <exit id="QGm-7M-b2m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1572" y="914"/>
+        </scene>
+        <!--Tickets View Controller - Tickets-->
+        <scene sceneID="L3N-AL-zIn">
+            <objects>
+                <tableViewController id="JyU-nN-uM9" customClass="TicketsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3bu-hP-FQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TicketCell" id="Xl5-Az-UfH">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xl5-Az-UfH" id="Dit-O8-sCt">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JyU-nN-uM9" id="86s-jd-KG9"/>
+                            <outlet property="delegate" destination="JyU-nN-uM9" id="wOa-GG-JaW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tickets" id="U5i-x8-nNi">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="toT-Nu-dwD">
+                            <connections>
+                                <segue destination="X4p-M0-LXz" kind="push" id="mgv-lS-Ok9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsQ-lJ-wqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="1113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XDa-wy-50d">
@@ -372,4 +411,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="u1o-SL-TEI"/>
+        <segue reference="mgv-lS-Ok9"/>
+    </inferredMetricsTieBreakers>
 </document>

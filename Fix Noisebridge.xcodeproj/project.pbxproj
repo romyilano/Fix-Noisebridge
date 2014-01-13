@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5762A5188438DC00A6CC0A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5762A4188438DC00A6CC0A /* MBProgressHUD.m */; };
 		1C674B6F18839DA600EFCB1D /* NB-iOS6Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6818839DA600EFCB1D /* NB-iOS6Settings@2x.png */; };
 		1C674B7018839DA600EFCB1D /* NB-iOS7Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6918839DA600EFCB1D /* NB-iOS7Logo.png */; };
 		1C674B7118839DA600EFCB1D /* NB-iOS7Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6A18839DA600EFCB1D /* NB-iOS7Logo@2x.png */; };
@@ -51,6 +52,7 @@
 		1C6CEB7118839A24003F5BB4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6E18839A24003F5BB4 /* WebViewController.m */; };
 		1C6CEB7318839B09003F5BB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */; };
 		1CC98DA41883A0FB00A6586B /* CreateTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */; };
+		1CC98DA71883B43200A6586B /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC98DA61883B43200A6586B /* TicketsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C5762A3188438DC00A6CC0A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = "<group>"; };
+		1C5762A4188438DC00A6CC0A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = "<group>"; };
 		1C674B6818839DA600EFCB1D /* NB-iOS6Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NB-iOS6Settings@2x.png"; sourceTree = "<group>"; };
 		1C674B6918839DA600EFCB1D /* NB-iOS7Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NB-iOS7Logo.png"; sourceTree = "<group>"; };
 		1C674B6A18839DA600EFCB1D /* NB-iOS7Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NB-iOS7Logo@2x.png"; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1CC98DA21883A0FB00A6586B /* CreateTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTicketViewController.h; sourceTree = "<group>"; };
 		1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTicketViewController.m; sourceTree = "<group>"; };
+		1CC98DA51883B43200A6586B /* TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		1CC98DA61883B43200A6586B /* TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +245,8 @@
 		1C6CEB0C188393F6003F5BB4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1C5762A3188438DC00A6CC0A /* MBProgressHUD.h */,
+				1C5762A4188438DC00A6CC0A /* MBProgressHUD.m */,
 				1C6CEB0D188393F6003F5BB4 /* Fix Noisebridge-Info.plist */,
 				1C6CEB0E188393F6003F5BB4 /* InfoPlist.strings */,
 				1C6CEB11188393F6003F5BB4 /* main.m */,
@@ -307,6 +315,8 @@
 				1C6CEB6E18839A24003F5BB4 /* WebViewController.m */,
 				1CC98DA21883A0FB00A6586B /* CreateTicketViewController.h */,
 				1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */,
+				1CC98DA51883B43200A6586B /* TicketsViewController.h */,
+				1CC98DA61883B43200A6586B /* TicketsViewController.m */,
 			);
 			name = "= View Controllers";
 			sourceTree = "<group>";
@@ -427,9 +437,11 @@
 				1C6CEB621883979E003F5BB4 /* ECSlidingSegue.m in Sources */,
 				1C6CEB7118839A24003F5BB4 /* WebViewController.m in Sources */,
 				1C6CEB12188393F6003F5BB4 /* main.m in Sources */,
+				1CC98DA71883B43200A6586B /* TicketsViewController.m in Sources */,
 				1C6CEB631883979E003F5BB4 /* ECSlidingViewController.m in Sources */,
 				1C6CEB601883979E003F5BB4 /* ECSlidingAnimationController.m in Sources */,
 				1C6CEB5F1883979E003F5BB4 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				1C5762A5188438DC00A6CC0A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

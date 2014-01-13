@@ -8,6 +8,7 @@
 
 #import "CreateTicketViewController.h"
 #import "Ticket.h"
+#import "TicketsViewController.h"
 #import <Parse/Parse.h>
 
 @interface CreateTicketViewController ()
@@ -50,7 +51,11 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
+    if ([segue.identifier isEqualToString:@"TicketCreatedSegue"])
+    {
+        TicketsViewController *ticketsViewController = segue.destinationViewController;
+        
+    }
 }
 
 #pragma mark - Action
@@ -62,7 +67,10 @@
     [newTicket setObject:self.authorTextField.text forKey:@"author"];
     
     [newTicket saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        
+        if (!error)
+        {
+            [self performSegueWithIdentifier:@"TicketCreatedSegue" sender:self];
+        }
     }];
 }
 @end
