@@ -51,11 +51,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"TicketCreatedSegue"])
-    {
-        TicketsViewController *ticketsViewController = segue.destinationViewController;
-        
-    }
+   
 }
 
 #pragma mark - Action
@@ -69,7 +65,8 @@
     [newTicket saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error)
         {
-            [self performSegueWithIdentifier:@"TicketCreatedSegue" sender:self];
+            [self performSegueWithIdentifier:@"CreatedTicketSegue" sender:self];
+            // [self performSegueWithIdentifier:@"UnWindToMainSegueID" sender:self];
         }
     }];
 }
