@@ -164,15 +164,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3cf-81-KnI">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="5ot-Me-Hud">
-                            <connections>
-                                <action selector="rightBarButtonPressed:" destination="ph7-MH-tB2" id="r9t-Bs-5Bk"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="3cf-81-KnI"/>
                     <connections>
-                        <outlet property="rightBarButton" destination="5ot-Me-Hud" id="zak-mb-Ttk"/>
                         <segue destination="M6H-79-XDT" kind="modal" identifier="LoginSegue" id="wBR-jd-4i8"/>
                     </connections>
                 </viewController>

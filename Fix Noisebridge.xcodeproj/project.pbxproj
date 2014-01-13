@@ -21,7 +21,6 @@
 		1C6CEB10188393F6003F5BB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB0E188393F6003F5BB4 /* InfoPlist.strings */; };
 		1C6CEB12188393F6003F5BB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB11188393F6003F5BB4 /* main.m */; };
 		1C6CEB16188393F6003F5BB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB15188393F6003F5BB4 /* AppDelegate.m */; };
-		1C6CEB19188393F6003F5BB4 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB17188393F6003F5BB4 /* First.storyboard */; };
 		1C6CEB1C188393F6003F5BB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB1B188393F6003F5BB4 /* ViewController.m */; };
 		1C6CEB1E188393F6003F5BB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB1D188393F6003F5BB4 /* Images.xcassets */; };
 		1C6CEB25188393F6003F5BB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB24188393F6003F5BB4 /* XCTest.framework */; };
@@ -51,6 +50,7 @@
 		1C6CEB7018839A24003F5BB4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6C18839A24003F5BB4 /* MainViewController.m */; };
 		1C6CEB7118839A24003F5BB4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6E18839A24003F5BB4 /* WebViewController.m */; };
 		1C6CEB7318839B09003F5BB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */; };
+		1CC98DA41883A0FB00A6586B /* CreateTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 		1C6CEB13188393F6003F5BB4 /* Fix Noisebridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fix Noisebridge-Prefix.pch"; sourceTree = "<group>"; };
 		1C6CEB14188393F6003F5BB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C6CEB15188393F6003F5BB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1C6CEB18188393F6003F5BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/First.storyboard; sourceTree = "<group>"; };
 		1C6CEB1A188393F6003F5BB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1C6CEB1B188393F6003F5BB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1C6CEB1D188393F6003F5BB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -125,6 +124,8 @@
 		1C6CEB6D18839A24003F5BB4 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		1C6CEB6E18839A24003F5BB4 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1CC98DA21883A0FB00A6586B /* CreateTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTicketViewController.h; sourceTree = "<group>"; };
+		1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTicketViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +228,6 @@
 				1C6CEB14188393F6003F5BB4 /* AppDelegate.h */,
 				1C6CEB15188393F6003F5BB4 /* AppDelegate.m */,
 				1C6CEB6718839A05003F5BB4 /* Main.storyboard */,
-				1C6CEB17188393F6003F5BB4 /* First.storyboard */,
 				1C6CEB661883995B003F5BB4 /* = View Controllers */,
 				1C674B7618839DAE00EFCB1D /* = Graphics */,
 				1C6CEB6518839953003F5BB4 /* = Models */,
@@ -305,6 +305,8 @@
 				1C6CEB6C18839A24003F5BB4 /* MainViewController.m */,
 				1C6CEB6D18839A24003F5BB4 /* WebViewController.h */,
 				1C6CEB6E18839A24003F5BB4 /* WebViewController.m */,
+				1CC98DA21883A0FB00A6586B /* CreateTicketViewController.h */,
+				1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */,
 			);
 			name = "= View Controllers";
 			sourceTree = "<group>";
@@ -393,7 +395,6 @@
 				1C6CEB10188393F6003F5BB4 /* InfoPlist.strings in Resources */,
 				1C674B7018839DA600EFCB1D /* NB-iOS7Logo.png in Resources */,
 				1C6CEB3C1883942E003F5BB4 /* README.md in Resources */,
-				1C6CEB19188393F6003F5BB4 /* First.storyboard in Resources */,
 				1C674B7518839DA600EFCB1D /* nb-photo-shelves.jpg in Resources */,
 				1C674B7118839DA600EFCB1D /* NB-iOS7Logo@2x.png in Resources */,
 				1C674B7218839DA600EFCB1D /* NB-iOS7Spotlight@2x.png in Resources */,
@@ -421,6 +422,7 @@
 				1C6CEB16188393F6003F5BB4 /* AppDelegate.m in Sources */,
 				1C6CEB6F18839A24003F5BB4 /* MEMenuViewController.m in Sources */,
 				1C6CEB611883979E003F5BB4 /* ECSlidingInteractiveTransition.m in Sources */,
+				1CC98DA41883A0FB00A6586B /* CreateTicketViewController.m in Sources */,
 				1C674B7918839DFF00EFCB1D /* Ticket.m in Sources */,
 				1C6CEB621883979E003F5BB4 /* ECSlidingSegue.m in Sources */,
 				1C6CEB7118839A24003F5BB4 /* WebViewController.m in Sources */,
@@ -456,14 +458,6 @@
 				1C6CEB0F188393F6003F5BB4 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1C6CEB17188393F6003F5BB4 /* First.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C6CEB18188393F6003F5BB4 /* Base */,
-			);
-			name = First.storyboard;
 			sourceTree = "<group>";
 		};
 		1C6CEB2D188393F6003F5BB4 /* InfoPlist.strings */ = {
