@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CreateTicketViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *rightBarButton;
+@interface CreateTicketViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UITextField *repairObjectTextField;
+@property (weak, nonatomic) IBOutlet UITextView *detailsTextView;
+@property (weak, nonatomic) IBOutlet UITextField *authorTextField;
+
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 @end
