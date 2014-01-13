@@ -51,6 +51,7 @@
 		1C6CEB7018839A24003F5BB4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6C18839A24003F5BB4 /* MainViewController.m */; };
 		1C6CEB7118839A24003F5BB4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6E18839A24003F5BB4 /* WebViewController.m */; };
 		1C6CEB7318839B09003F5BB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */; };
+		1CA647D518847F4400C661C9 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA647D418847F4400C661C9 /* TicketTableViewCell.m */; };
 		1CC98DA41883A0FB00A6586B /* CreateTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */; };
 		1CC98DA71883B43200A6586B /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC98DA61883B43200A6586B /* TicketsViewController.m */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,8 @@
 		1C6CEB6D18839A24003F5BB4 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		1C6CEB6E18839A24003F5BB4 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1CA647D318847F4400C661C9 /* TicketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		1CA647D418847F4400C661C9 /* TicketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
 		1CC98DA21883A0FB00A6586B /* CreateTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTicketViewController.h; sourceTree = "<group>"; };
 		1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTicketViewController.m; sourceTree = "<group>"; };
 		1CC98DA51883B43200A6586B /* TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
@@ -317,6 +320,8 @@
 				1CC98DA31883A0FB00A6586B /* CreateTicketViewController.m */,
 				1CC98DA51883B43200A6586B /* TicketsViewController.h */,
 				1CC98DA61883B43200A6586B /* TicketsViewController.m */,
+				1CA647D318847F4400C661C9 /* TicketTableViewCell.h */,
+				1CA647D418847F4400C661C9 /* TicketTableViewCell.m */,
 			);
 			name = "= View Controllers";
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				1C6CEB641883979E003F5BB4 /* UIViewController+ECSlidingViewController.m in Sources */,
 				1C6CEB16188393F6003F5BB4 /* AppDelegate.m in Sources */,
 				1C6CEB6F18839A24003F5BB4 /* MEMenuViewController.m in Sources */,
+				1CA647D518847F4400C661C9 /* TicketTableViewCell.m in Sources */,
 				1C6CEB611883979E003F5BB4 /* ECSlidingInteractiveTransition.m in Sources */,
 				1CC98DA41883A0FB00A6586B /* CreateTicketViewController.m in Sources */,
 				1C674B7918839DFF00EFCB1D /* Ticket.m in Sources */,

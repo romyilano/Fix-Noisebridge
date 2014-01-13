@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TicketsViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *homeBarButton;
 
+- (IBAction)homeBarButtonPressed:(id)sender;
 @end

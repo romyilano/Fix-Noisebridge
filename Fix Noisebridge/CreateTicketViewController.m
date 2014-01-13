@@ -59,8 +59,9 @@
     
     PFObject *newTicket = [PFObject objectWithClassName:@"Ticket"];
     [newTicket setObject:self.titleTextField.text forKey:@"title"];
-    [newTicket setObject:self.repairObjectTextField.text forKey:@"repairObject"];
+    [newTicket setObject:self.repairObjectTextField.text forKey:@"tool"];
     [newTicket setObject:self.authorTextField.text forKey:@"author"];
+    [newTicket setObject:self.detailsTextView.text forKey:@"ticketDescription"];
     
     [newTicket saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error)

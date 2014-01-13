@@ -7,7 +7,10 @@
 //
 
 #import "TicketsViewController.h"
+#import "TicketTableViewCell.h"
+#import "Ticket.h"
 #import <Parse/Parse.h>
+
 
 @interface TicketsViewController ()
 @property (nonatomic, strong) NSArray *tools;
@@ -28,26 +31,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    PFQuery *query = [PFQuery queryWithClassName:@"Ticket"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        
-        if (!error)
-        {
-            self.tickets = objects;
-            
-        }
-        else
-        {
-            // log details of failure
-            NSLog(@"Eror: %@ %@", error, [error userInfo]);
-        }
-    }];
-   
-    
-    
+    [self getTicketsFromParse];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,28 +50,30 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+
+    return self.tickets.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    TicketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TicketCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    Ticket *currentTicket = self.tickets[indexPath.row];
+    
+    cell.titleLabel.text = currentTicket.title;
+    cell.toolLabel.text = currentTicket.tool;
+    cell.descriptionLabel.text = currentTicket.ticketDescription;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -121,7 +113,7 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -130,6 +122,36 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
 
+#pragma mark - Custom Methods
+-(void)getTicketsFromParse
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Ticket"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (!error)
+        {
+            NSMutableArray *workingArray = [[NSMutableArray alloc] initWithCapacity:objects.count];
+            for (NSDictionary *ticketRaw in objects)
+            {
+                Ticket *ticket = [[Ticket alloc] init];
+                ticket.ticketDescription = [ticketRaw objectForKey:@"ticketDescription"];
+                ticket.title = [ticketRaw objectForKey:@"title"];
+                [workingArray addObject:ticket];
+            }
+            
+            self.tickets = [workingArray copy];
+            [self.tableView reloadData];
+        }
+        else
+        {
+            // log details of failure
+            NSLog(@"Eror: %@ %@", error, [error userInfo]);
+        }
+    }];
+
+}
+- (IBAction)homeBarButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"undWindToMainSegueID" sender:self];
+}
 @end
