@@ -7,12 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:kParseAppId
+                  clientKey:kParseClientKey];
+
+    // [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // wipe out old user defaults
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"objectIDArray"])
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"objectIDArray"];
+    }
+    
     return YES;
 }
 							

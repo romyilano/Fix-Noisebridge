@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C674B6F18839DA600EFCB1D /* NB-iOS6Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6818839DA600EFCB1D /* NB-iOS6Settings@2x.png */; };
+		1C674B7018839DA600EFCB1D /* NB-iOS7Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6918839DA600EFCB1D /* NB-iOS7Logo.png */; };
+		1C674B7118839DA600EFCB1D /* NB-iOS7Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6A18839DA600EFCB1D /* NB-iOS7Logo@2x.png */; };
+		1C674B7218839DA600EFCB1D /* NB-iOS7Spotlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6B18839DA600EFCB1D /* NB-iOS7Spotlight@2x.png */; };
+		1C674B7318839DA600EFCB1D /* nb-photo-3dprinting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6C18839DA600EFCB1D /* nb-photo-3dprinting.jpg */; };
+		1C674B7418839DA600EFCB1D /* nb-photo-orchestra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6D18839DA600EFCB1D /* nb-photo-orchestra.jpg */; };
+		1C674B7518839DA600EFCB1D /* nb-photo-shelves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C674B6E18839DA600EFCB1D /* nb-photo-shelves.jpg */; };
+		1C674B7918839DFF00EFCB1D /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C674B7818839DFF00EFCB1D /* Ticket.m */; };
 		1C6CEB06188393F6003F5BB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB05188393F6003F5BB4 /* Foundation.framework */; };
 		1C6CEB08188393F6003F5BB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB07188393F6003F5BB4 /* CoreGraphics.framework */; };
 		1C6CEB0A188393F6003F5BB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB09188393F6003F5BB4 /* UIKit.framework */; };
 		1C6CEB10188393F6003F5BB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB0E188393F6003F5BB4 /* InfoPlist.strings */; };
 		1C6CEB12188393F6003F5BB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB11188393F6003F5BB4 /* main.m */; };
 		1C6CEB16188393F6003F5BB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB15188393F6003F5BB4 /* AppDelegate.m */; };
-		1C6CEB19188393F6003F5BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB17188393F6003F5BB4 /* Main.storyboard */; };
+		1C6CEB19188393F6003F5BB4 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB17188393F6003F5BB4 /* First.storyboard */; };
 		1C6CEB1C188393F6003F5BB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB1B188393F6003F5BB4 /* ViewController.m */; };
 		1C6CEB1E188393F6003F5BB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB1D188393F6003F5BB4 /* Images.xcassets */; };
 		1C6CEB25188393F6003F5BB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB24188393F6003F5BB4 /* XCTest.framework */; };
@@ -38,6 +46,11 @@
 		1C6CEB621883979E003F5BB4 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB5A1883979E003F5BB4 /* ECSlidingSegue.m */; };
 		1C6CEB631883979E003F5BB4 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB5C1883979E003F5BB4 /* ECSlidingViewController.m */; };
 		1C6CEB641883979E003F5BB4 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB5E1883979E003F5BB4 /* UIViewController+ECSlidingViewController.m */; };
+		1C6CEB6818839A05003F5BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6718839A05003F5BB4 /* Main.storyboard */; };
+		1C6CEB6F18839A24003F5BB4 /* MEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6A18839A24003F5BB4 /* MEMenuViewController.m */; };
+		1C6CEB7018839A24003F5BB4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6C18839A24003F5BB4 /* MainViewController.m */; };
+		1C6CEB7118839A24003F5BB4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CEB6E18839A24003F5BB4 /* WebViewController.m */; };
+		1C6CEB7318839B09003F5BB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C674B6818839DA600EFCB1D /* NB-iOS6Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NB-iOS6Settings@2x.png"; sourceTree = "<group>"; };
+		1C674B6918839DA600EFCB1D /* NB-iOS7Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NB-iOS7Logo.png"; sourceTree = "<group>"; };
+		1C674B6A18839DA600EFCB1D /* NB-iOS7Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NB-iOS7Logo@2x.png"; sourceTree = "<group>"; };
+		1C674B6B18839DA600EFCB1D /* NB-iOS7Spotlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NB-iOS7Spotlight@2x.png"; sourceTree = "<group>"; };
+		1C674B6C18839DA600EFCB1D /* nb-photo-3dprinting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nb-photo-3dprinting.jpg"; sourceTree = "<group>"; };
+		1C674B6D18839DA600EFCB1D /* nb-photo-orchestra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nb-photo-orchestra.jpg"; sourceTree = "<group>"; };
+		1C674B6E18839DA600EFCB1D /* nb-photo-shelves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nb-photo-shelves.jpg"; sourceTree = "<group>"; };
+		1C674B7718839DFF00EFCB1D /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		1C674B7818839DFF00EFCB1D /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
 		1C6CEB02188393F6003F5BB4 /* Fix Noisebridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fix Noisebridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6CEB05188393F6003F5BB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1C6CEB07188393F6003F5BB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +83,7 @@
 		1C6CEB13188393F6003F5BB4 /* Fix Noisebridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fix Noisebridge-Prefix.pch"; sourceTree = "<group>"; };
 		1C6CEB14188393F6003F5BB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C6CEB15188393F6003F5BB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1C6CEB18188393F6003F5BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C6CEB18188393F6003F5BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/First.storyboard; sourceTree = "<group>"; };
 		1C6CEB1A188393F6003F5BB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1C6CEB1B188393F6003F5BB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1C6CEB1D188393F6003F5BB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -95,6 +117,14 @@
 		1C6CEB5C1883979E003F5BB4 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		1C6CEB5D1883979E003F5BB4 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
 		1C6CEB5E1883979E003F5BB4 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
+		1C6CEB6718839A05003F5BB4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1C6CEB6918839A24003F5BB4 /* MEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMenuViewController.h; sourceTree = "<group>"; };
+		1C6CEB6A18839A24003F5BB4 /* MEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMenuViewController.m; sourceTree = "<group>"; };
+		1C6CEB6B18839A24003F5BB4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1C6CEB6C18839A24003F5BB4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1C6CEB6D18839A24003F5BB4 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1C6CEB6E18839A24003F5BB4 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6CEB7318839B09003F5BB4 /* libsqlite3.dylib in Frameworks */,
 				1C6CEB501883957F003F5BB4 /* SystemConfiguration.framework in Frameworks */,
 				1C6CEB4E1883957A003F5BB4 /* StoreKit.framework in Frameworks */,
 				1C6CEB4C18839575003F5BB4 /* Security.framework in Frameworks */,
@@ -131,6 +162,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C674B7618839DAE00EFCB1D /* = Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				1C6CEB1D188393F6003F5BB4 /* Images.xcassets */,
+				1C674B6818839DA600EFCB1D /* NB-iOS6Settings@2x.png */,
+				1C674B6918839DA600EFCB1D /* NB-iOS7Logo.png */,
+				1C674B6A18839DA600EFCB1D /* NB-iOS7Logo@2x.png */,
+				1C674B6B18839DA600EFCB1D /* NB-iOS7Spotlight@2x.png */,
+				1C674B6C18839DA600EFCB1D /* nb-photo-3dprinting.jpg */,
+				1C674B6D18839DA600EFCB1D /* nb-photo-orchestra.jpg */,
+				1C674B6E18839DA600EFCB1D /* nb-photo-shelves.jpg */,
+			);
+			name = "= Graphics";
+			sourceTree = "<group>";
+		};
 		1C6CEAF9188393F6003F5BB4 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +201,7 @@
 		1C6CEB04188393F6003F5BB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C6CEB7218839B09003F5BB4 /* libsqlite3.dylib */,
 				1C6CEB511883979E003F5BB4 /* ECSlidingViewController */,
 				1C6CEB4F1883957F003F5BB4 /* SystemConfiguration.framework */,
 				1C6CEB4D1883957A003F5BB4 /* StoreKit.framework */,
@@ -179,10 +226,11 @@
 			children = (
 				1C6CEB14188393F6003F5BB4 /* AppDelegate.h */,
 				1C6CEB15188393F6003F5BB4 /* AppDelegate.m */,
-				1C6CEB17188393F6003F5BB4 /* Main.storyboard */,
-				1C6CEB1A188393F6003F5BB4 /* ViewController.h */,
-				1C6CEB1B188393F6003F5BB4 /* ViewController.m */,
-				1C6CEB1D188393F6003F5BB4 /* Images.xcassets */,
+				1C6CEB6718839A05003F5BB4 /* Main.storyboard */,
+				1C6CEB17188393F6003F5BB4 /* First.storyboard */,
+				1C6CEB661883995B003F5BB4 /* = View Controllers */,
+				1C674B7618839DAE00EFCB1D /* = Graphics */,
+				1C6CEB6518839953003F5BB4 /* = Models */,
 				1C6CEB0C188393F6003F5BB4 /* Supporting Files */,
 			);
 			path = "Fix Noisebridge";
@@ -235,6 +283,30 @@
 				1C6CEB5E1883979E003F5BB4 /* UIViewController+ECSlidingViewController.m */,
 			);
 			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		1C6CEB6518839953003F5BB4 /* = Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C674B7718839DFF00EFCB1D /* Ticket.h */,
+				1C674B7818839DFF00EFCB1D /* Ticket.m */,
+			);
+			name = "= Models";
+			sourceTree = "<group>";
+		};
+		1C6CEB661883995B003F5BB4 /* = View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C6CEB1A188393F6003F5BB4 /* ViewController.h */,
+				1C6CEB1B188393F6003F5BB4 /* ViewController.m */,
+				1C6CEB6918839A24003F5BB4 /* MEMenuViewController.h */,
+				1C6CEB6A18839A24003F5BB4 /* MEMenuViewController.m */,
+				1C6CEB6B18839A24003F5BB4 /* MainViewController.h */,
+				1C6CEB6C18839A24003F5BB4 /* MainViewController.m */,
+				1C6CEB6D18839A24003F5BB4 /* WebViewController.h */,
+				1C6CEB6E18839A24003F5BB4 /* WebViewController.m */,
+			);
+			name = "= View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +385,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C674B6F18839DA600EFCB1D /* NB-iOS6Settings@2x.png in Resources */,
 				1C6CEB1E188393F6003F5BB4 /* Images.xcassets in Resources */,
+				1C674B7318839DA600EFCB1D /* nb-photo-3dprinting.jpg in Resources */,
+				1C674B7418839DA600EFCB1D /* nb-photo-orchestra.jpg in Resources */,
+				1C6CEB6818839A05003F5BB4 /* Main.storyboard in Resources */,
 				1C6CEB10188393F6003F5BB4 /* InfoPlist.strings in Resources */,
+				1C674B7018839DA600EFCB1D /* NB-iOS7Logo.png in Resources */,
 				1C6CEB3C1883942E003F5BB4 /* README.md in Resources */,
-				1C6CEB19188393F6003F5BB4 /* Main.storyboard in Resources */,
+				1C6CEB19188393F6003F5BB4 /* First.storyboard in Resources */,
+				1C674B7518839DA600EFCB1D /* nb-photo-shelves.jpg in Resources */,
+				1C674B7118839DA600EFCB1D /* NB-iOS7Logo@2x.png in Resources */,
+				1C674B7218839DA600EFCB1D /* NB-iOS7Spotlight@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +415,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6CEB7018839A24003F5BB4 /* MainViewController.m in Sources */,
 				1C6CEB1C188393F6003F5BB4 /* ViewController.m in Sources */,
 				1C6CEB641883979E003F5BB4 /* UIViewController+ECSlidingViewController.m in Sources */,
 				1C6CEB16188393F6003F5BB4 /* AppDelegate.m in Sources */,
+				1C6CEB6F18839A24003F5BB4 /* MEMenuViewController.m in Sources */,
 				1C6CEB611883979E003F5BB4 /* ECSlidingInteractiveTransition.m in Sources */,
+				1C674B7918839DFF00EFCB1D /* Ticket.m in Sources */,
 				1C6CEB621883979E003F5BB4 /* ECSlidingSegue.m in Sources */,
+				1C6CEB7118839A24003F5BB4 /* WebViewController.m in Sources */,
 				1C6CEB12188393F6003F5BB4 /* main.m in Sources */,
 				1C6CEB631883979E003F5BB4 /* ECSlidingViewController.m in Sources */,
 				1C6CEB601883979E003F5BB4 /* ECSlidingAnimationController.m in Sources */,
@@ -374,12 +458,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1C6CEB17188393F6003F5BB4 /* Main.storyboard */ = {
+		1C6CEB17188393F6003F5BB4 /* First.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1C6CEB18188393F6003F5BB4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = First.storyboard;
 			sourceTree = "<group>";
 		};
 		1C6CEB2D188393F6003F5BB4 /* InfoPlist.strings */ = {
@@ -560,6 +644,7 @@
 				1C6CEB36188393F6003F5BB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C6CEB37188393F6003F5BB4 /* Build configuration list for PBXNativeTarget "Fix NoisebridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +653,7 @@
 				1C6CEB39188393F6003F5BB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

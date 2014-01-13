@@ -1,0 +1,19 @@
+//
+//  MainViewController.h
+//  Fix NB
+//
+//  Created by Romy Ilano on 1/9/14.
+//  Copyright (c) 2014 Romy Ilano. All rights reserved.
+//
+
+/*
+ 
+ Main Screen User sees when loading the app 
+ 
+ */
+
+#import <UIKit/UIKit.h>
+
+@interface MainViewController : UIViewController
+
+@end
