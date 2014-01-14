@@ -259,7 +259,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="umf-rG-K7h">
                             <connections>
                                 <action selector="submitButtonPressed:" destination="ph7-MH-tB2" id="dG1-Em-Oci"/>
-                                <segue destination="JyU-nN-uM9" kind="push" identifier="CreatedTicketSegue" id="9T3-8t-dsT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -270,6 +269,7 @@
                         <outlet property="submitButton" destination="aqh-ci-ziv" id="o8i-2s-3Sb"/>
                         <outlet property="titleTextField" destination="cm7-9i-Q92" id="tVh-J9-xcs"/>
                         <segue destination="csH-nf-1X4" kind="unwind" identifier="UnWindToMainSegueID" unwindAction="unWindToMain:" id="7cW-ZW-gf1"/>
+                        <segue destination="JyU-nN-uM9" kind="push" identifier="CreatedTicketSegue" id="0SQ-Kn-EdJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwk-6T-5pI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -483,6 +483,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="u1o-SL-TEI"/>
+        <segue reference="0SQ-Kn-EdJ"/>
     </inferredMetricsTieBreakers>
 </document>

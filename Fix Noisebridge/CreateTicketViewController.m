@@ -66,8 +66,12 @@
     [newTicket saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error)
         {
+            
             [self performSegueWithIdentifier:@"CreatedTicketSegue" sender:self];
             // [self performSegueWithIdentifier:@"UnWindToMainSegueID" sender:self];
+        } else
+        {
+            NSLog(@"%@ %@", error, [error userInfo]);
         }
     }];
 }
